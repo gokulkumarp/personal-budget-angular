@@ -1,0 +1,10 @@
+<div class="center">
+  <ng-content select="h1"></ng-content>
+  <p><ng-content select="div"></ng-content></p>
+  <button
+    (click)="enableDisableRule()"
+    [ngClass]="{ green: toggle, red: !toggle }"
+  >
+    {{ status }}
+  </button>
+</div>
